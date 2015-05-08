@@ -52,6 +52,16 @@
 ![view bp menu](images/android-studio-8-viewBreakPoint.png)
 该界面上会显示出你所设置的全部断点，当你点击相应的断点之后，会显示出关于该断点的相应设置，同时下放还会显示该断点所在行的具体代码，方便你辨认断点。
 
+##Evaluate expression
+在调试的过程中，单靠 Android Studio 调试窗口我们只能监控到变量的值的变化。当某一步出现错误的时候，可能出现了多个函数调用，这个时候 Android Studio 提供了 evaluate expression 功能让用户可以直接监控表达式的返回值。
+
+![evaluate](images/android-studio-8-evaluate.jpg)
+
+进入调试模式以后，点击图中箭头所指向的按钮，就会打开 evaluate expression 窗口。如果你希望直接监控某些表达式的返回值，那么直接在该表达式所在的语句设置断点，运行到断点处时，在 evaluate expression 中输入你想监控的表达式，然后点击 evaluate 按钮，就可以开始监控了。
+
+![useevaluate](images/android-studio-8-useevaluate.png)
+以一个简单的循环为例，在 for 语句前设置断点，然后打开 evaluate expression 窗口，输入想要监控的语句，点击 evaluate 按钮后，显示出了返回结果 result。
+
 ##高级调试技巧
 本节会简单的介绍一下高级调试技巧，但是不做深入研究，有兴趣的读者可以自行探究一下。
 ###内存分配
